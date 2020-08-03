@@ -1,5 +1,7 @@
 # compiled files
 *.exe
+EXE/fort.1
+EXE/jday
 # log files
 *.out
 *.err
@@ -16,3 +18,7 @@ EXE/medslik.log
 EXE/medslik.tmp
 EXE/medslik5.inp
 EXE/timelog.log
+# data
+DATA
+# bathymetry and coastline
+EXE/data/medf*
