@@ -1,7 +1,7 @@
 SIM_NAME=test_0730_01
 MODEL=REL       # choose between MFS or AFS
 WIND=SKIRON     # choose between ECMWF 0.5° or ECMWF 0.25°
-sim_length=0024 # choose the simulation length (in hours, 4 characters)
+sim_length=0004 # choose the simulation length (in hours, 4 characters)
 
 # insert oil slick data: time and date of observation
 

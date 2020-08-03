@@ -46,8 +46,11 @@ rm -f tmp*.tmp
 rm -f oil_file.txt
 rm -f initial*.txt
 
-HOME_MEDSLIK=/work/opa/witoil-dev/mdk2-sanifs/
-F_DATA=/work/opa/witoil-dev/mdk2-sanifs/DATA/
+# read config file
+source mdk2.conf
+
+HOME_MEDSLIK=$MEDSLIK_BASEDIR
+F_DATA=$MEDSLIK_DATA
 
 echo "[$APPNAME] -- Reading medslik_inputfile.txt"
 source medslik_inputfile.txt

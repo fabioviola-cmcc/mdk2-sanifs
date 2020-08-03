@@ -1,0 +1,8 @@
+Merey
+17.40          API of Oil
+0.950          Density of Oil
+0.966          Residual Density of Oil
+86.28          Residual Percent of Oil
+61.00          Viscosity of Oil
+38.00          Temperature at which Viscosity determined
+0.229          Vapour Pressure of Oil (bar)

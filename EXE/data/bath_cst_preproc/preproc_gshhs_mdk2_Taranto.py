@@ -433,7 +433,7 @@ oce_dir = "/work/opa/witoil-dev/mdk2-sanifs/DATA/fcst_data/H3k/"
 
 # open an ocean forecast file
 ###oce_filename = (oce_dir + "/" + os.listdir(oce_dir)[2])
-oce_filename = (oce_dir + "/MDK_ocean_200614_T.nc")
+oce_filename = (oce_dir + "/FULL_MDK_ocean_200614_T.nc")
 
 x_mod, y_mod = oce_grid(oce_filename)
 

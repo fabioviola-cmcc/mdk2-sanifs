@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# read config file
+source mdk2.conf
+
 # set where you have placed MEDSLIK_II folder
-HOME_MEDSLIK=/work/opa/witoil-dev/mdk2-sanifs/
-MEDSLIK=/work/opa/witoil-dev/mdk2-sanifs/EXE
+HOME_MEDSLIK=$MEDSLIK_BASEDIR
+MEDSLIK=$MEDSLIK_EXE
 
 # generate update timelog file
 start_time=$(date +%s.%N)

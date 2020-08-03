@@ -126,7 +126,7 @@ iLatitude, iLongitude, Z = load_gebco(gebco_filename)
 
 # open an ocean forecast file
 ###oce_filename = (oce_dir + "/MDK_ocean_190804")
-oce_filename = (oce_dir + "/MDK_ocean_200614_T.nc")
+oce_filename = (oce_dir + "/FULL_MDK_ocean_200614_T.nc")
 x_mod, y_mod = oce_grid(oce_filename)
 
 

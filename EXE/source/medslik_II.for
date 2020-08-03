@@ -1638,7 +1638,7 @@ C----------------------------------------------------------------------
       NPARCEL=ntot
       NTIME=icomp/tiprs
 
-      write(*,*) "[medslik_II.for] -- Writing the final NetCDF file"
+      write(*,*) "Writing the final NetCDF file"
       
 c     Dimensions
 
@@ -2109,7 +2109,7 @@ c----------------------------------------------------------------------
         
 c        istoke= 1 !(0: no stoke drift, 1: instantaneous wind, 2: 12 hours average wind)
          if(istoke.eq.2) then
-         write(6,*) '[medslik_II.for] -- Stoke drift calculation'
+         write(6,*) 'Stoke drift calculation'
 c        write(6,*) '12 HOURS AVERAGE WIND CALCULATION'
          wvel_vec(nst)=wvel
          wdir_vec(nst)=wdir
@@ -2132,7 +2132,7 @@ c        write(6,*) '12 HOURS AVERAGE WIND CALCULATION'
 
 c--------------------------------------------------------------------
         if(istoke.eq.0) then
-        write(6,*) '[medslik_II.for] -- ISTOKE=0, No stoke drift calc.'
+        write(6,*) 'ISTOKE=0, No stoke drift calc.'
         elseif(istoke.eq.2) then
 	wdirstoke=wdir_mean(nst)
         elseif(istoke.eq.1) then
@@ -4395,8 +4395,8 @@ c
 	  fn=wfcstfn(ifile)
 	  iw = iwindrec
 	  if(ihcst.eq.1) iw = nrecs + 1 - iwindrec
-	  write(6,*) '[medslik_II.for] -- Reading wind from file '//fn//', record ',iw
-	  write(90,*) '[medslik_II.for] -- Reading wind from file '//fn//', record ',iw
+	  write(6,*) 'Reading wind from file '//fn//', record ',iw
+	  write(90,*) 'Reading wind from file '//fn//', record ',iw
 	  call readwind(dirr,fn,iw,nrecs,winx,winy)
 
 	  if(iwindrec.eq.nrecs) then
@@ -4414,8 +4414,8 @@ c
         fn=wfcstfn(ifile)
 	  iw = iwindrec
 	  if(ihcst.eq.1) iw = nrecs + 1 - iwindrec
-	  write(6,*) '[medslik_II.for] -- Reading wind from file '//fn//', record ',iw
-	  write(90,*) '[medslik_II.for] -- Reading wind from file '//fn//', record ',iw	
+	  write(6,*) 'Reading wind from file '//fn//', record ',iw
+	  write(90,*) 'Reading wind from file '//fn//', record ',iw	
 	  call readwind(dirr,fn,iw,nrecs,dwinx,dwiny)
 c
 c	calculate the increments for each spill re-computation
@@ -5455,7 +5455,7 @@ c	    write(6,*) i,'   ',fcstfn(i),fcsttim(i)
         write(90,*) ' '
 
         fn=fcstfn(ifile)
-	  write(*,*) '[medslik_II.for] -- Reading forecast currents from file ',fn
+	  write(*,*) 'Reading forecast currents from file ',fn
 
         write(6,*) 'Reading forecast currents from file ',fn
   	  write(90,*) 'Forecast current directory = ',fcstcurdir

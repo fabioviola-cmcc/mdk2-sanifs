@@ -5,6 +5,8 @@ module load intel19.5/hdf5/1.10.5
 module load intel19.5/szip/2.1.1
 module load curl/7.66.0
 
+source ../mdk2.conf
+
 #export CC=icc
 #export F9X=ifort
 #export CXX=icpc
@@ -14,9 +16,9 @@ module load curl/7.66.0
 #gfortran -o $DIR_EXE/lat_lon.exe $DIR_SRC/lat_lon.for
 
 # set folders
-wdir=/work/opa/witoil-dev/mdk2-sanifs/
-DIR_EXE=${wdir}/EXE
-DIR_SRC=${wdir}/EXE/source
+wdir=$MEDSLIK_BASEDIR
+DIR_EXE=$MEDSLIK_EXE
+DIR_SRC=$MEDSLIK_EXE/source
 NETCDF=/zeus/opt/intel19.5/netcdf
 
 ################sergio vecchie
