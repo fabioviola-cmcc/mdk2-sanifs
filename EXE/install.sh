@@ -9,3 +9,7 @@ mkdir $MEDSLIK_EXE/fcst_data
 mkdir $MEDSLIK_EXE/fcst_data/H3k
 mkdir $MEDSLIK_EXE/fcst_data/SK1
 mkdir $MEDSLIK_EXE/log
+
+# compile medslik
+cd $MEDSLIK_EXE/source
+sh ./compile.fabio.sh
