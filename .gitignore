@@ -10,3 +10,9 @@ EXE/data/bath_cst_preproc/GEBCO_2014_1D.nc
 EXE/data/bath_cst_preproc/gshhs_f.b
 # output files
 EXE/output/*
+# temporary files
+EXE/Extract.log
+EXE/medslik.log
+EXE/medslik.tmp
+EXE/medslik5.inp
+EXE/timelog.log
