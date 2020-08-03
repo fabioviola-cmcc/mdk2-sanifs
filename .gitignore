@@ -1,0 +1,12 @@
+# compiled files
+*.exe
+# log files
+*.out
+*.err
+# backup files
+*~
+# large files
+data/bath_cst_preproc/GEBCO_2014_1D.nc
+data/bath_cst_preproc/gshhs_f.b
+# output files
+output/*
