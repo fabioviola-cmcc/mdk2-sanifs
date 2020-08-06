@@ -1,12 +1,4 @@
-medf  74 5 
-   17.4529476           19.0107193             Min & Max Longitudes
-   39.0163345           40.2163315             Min & Max Latitudes
-2
-20072924
-20073024
-20073124
-3
-20200729
-20200730
-20200731
- 0
+    
+min_lon_gradi     min_lon_primi         Min & Max Longitudes
+min_lat_gradi     min_lat_primi         Min & Max Latitudes
+

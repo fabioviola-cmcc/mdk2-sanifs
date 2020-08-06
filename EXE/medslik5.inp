@@ -1,32 +1,24 @@
-medf           Name of region of Mediterranean Sea in which spill is located
+           Name of region of Mediterranean Sea in which spill is located
 01   01        Mode (1/0 for oil slick/trajectory simulation); Number of superimposed spills
 0    0         Indicates if simulation is to restart at the given hour
-29 07 2020     Date of Spill
-0100           Hour of Spill
-0024           Duration of Spill (hrs)
-39 36.98       Latitude of Spill (degrees & minutes)
-18 13.91       Longitude of Spill (degrees & minutes)
+  20     Date of Spill
+           Hour of Spill
+           Duration of Spill (hrs)
+        Latitude of Spill (degrees & minutes)
+        Longitude of Spill (degrees & minutes)
 out            Three-letter Prefix for Output Filenames
-0024           Length of Simulation (hrs)
+           Length of Simulation (hrs)
 001            Interval for Printing Results to Output File
-74             Indicates water current data from Climatology (0), Forecasts (1-80), User-defined uniform (88) or non-uniform currents (99)
-5             Indicates wind from Climatology (0), MFS water-current Forecasts (1), SKIRON 3-hourly forecasts (4), SKIRON Hourly Forecasts (5) or User-defined in file 'medslik.wnd' (8)
+             Indicates water current data from Climatology (0), Forecasts (1-80), User-defined uniform (88) or non-uniform currents (99)
+             Indicates wind from Climatology (0), MFS water-current Forecasts (1), SKIRON 3-hourly forecasts (4), SKIRON Hourly Forecasts (5) or User-defined in file 'medslik.wnd' (8)
 00             Indicates that the spill positions will/will not (1/0) be corrected in accordance with the file 'medslik.crn'
-0050      Spill Rate (units/hr)
+      Spill Rate (units/hr)
 tons           Units for Oil Volume (tons, bbls or cu.m)
-0             Slick Age
+             Slick Age
 0             0/1 if Satellite Data is used
 01             Indicates SST from Climatology (0), MFS water-current Forecasts (1) or User-defined (8)
 00.0           Sea Surface Temperature in case preceding index = 8
 00             Indicates if booms deployed (0 or 1)
-150.0            Spatial resolution (m) of the oil tracer grid
-2
-200729_U.nc 1
-200729_V.nc 1
-200729_T.nc 1
-200730_U.nc 1
-200730_V.nc 1
-200730_T.nc 1
-2
-sk1_200729.sk1 1
-sk1_200730.sk1 1
+            Spatial resolution (m) of the oil tracer grid
+
+

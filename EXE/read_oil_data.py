@@ -39,7 +39,7 @@ if option=="NAME":
    oil_file=oil_file+visc+"          Viscosity of Oil\n"
    oil_file=oil_file+temp+"          Temperature at which Viscosity determined\n"
    oil_file=oil_file+vap_press+"          Vapour Pressure of Oil (bar)\n"
-   doc=file("oil_file.txt",'w')
+   doc=open("oil_file.txt",'w')
    doc.writelines(oil_file)
    doc.close()
 
@@ -69,6 +69,6 @@ if option=="API":
    oil_file=oil_file+visc+"          Viscosity of Oil\n"
    oil_file=oil_file+temp+"          Temperature at which Viscosity determined\n"
    oil_file=oil_file+vap_press+"          Vapour Pressure of Oil (bar)\n"
-   doc=file("oil_file.txt",'w')
+   doc=open("oil_file.txt",'w')
    doc.writelines(oil_file)
    doc.close()

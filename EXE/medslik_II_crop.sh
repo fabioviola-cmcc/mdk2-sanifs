@@ -562,3 +562,6 @@ if  [ $currents = 74 ]
 then
     mv fcst_data/H3k/*.* output/$DIR_output/OCE
 fi
+
+cd output
+ln -s $DIR_output final

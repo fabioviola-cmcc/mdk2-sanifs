@@ -6,4 +6,4 @@ JJ=$1
 
 # Invoke medslik
 MSCommand=./RUN_crop.sh
-bsub -n 5 -R "span[ptile=1] rusage[mem=50GB]" -Is -q s_short -P 0372 -J ${JJ} $MEDSLIK_EXE/$MSCommand 
+bsub -R "span[ptile=1] rusage[mem=50GB]" -Is -q s_medium -P 0372 -J ${JJ} $MEDSLIK_EXE/$MSCommand 
